@@ -16,21 +16,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.black
         
-        self.lightSwitch.addTarget(self, action: #selector(switchLight), for: .touchUpInside)
+    
         
         
     }
-    
-    @IBAction func switchLight(_ sender: Any) {
-        
-        if self.view.backgroundColor == UIColor.black {
-            self.view.backgroundColor = UIColor.white
-        } else {
-            self.view.backgroundColor = UIColor.black
-        }
-    
-    }
-    
+
 
 
 }

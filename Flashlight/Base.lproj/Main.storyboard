@@ -14,30 +14,32 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Flashlight" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ipv-z3-gra">
-                                <rect key="frame" x="182.66666666666666" y="362.66666666666669" width="51" height="31"/>
-                                <connections>
-                                    <action selector="switchLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hJU-rk-IoF"/>
-                                </connections>
-                            </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yJC-lA-Qvc">
+                                <rect key="frame" x="148" y="354" width="118" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="ALA-4o-pmE"/>
+                                    <constraint firstAttribute="width" constant="300" id="YF4-O1-YFa"/>
+                                    <constraint firstAttribute="width" constant="114" id="rRX-wG-VI4"/>
+                                </constraints>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ipv-z3-gra" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Cvz-vS-VpW"/>
-                            <constraint firstItem="ipv-z3-gra" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XYv-aN-PKQ"/>
+                            <constraint firstItem="yJC-lA-Qvc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="1FO-Jr-9Tp"/>
+                            <constraint firstItem="yJC-lA-Qvc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="DI2-Cu-9bX"/>
+                            <constraint firstItem="yJC-lA-Qvc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="UJO-ZC-ahn"/>
+                            <constraint firstItem="yJC-lA-Qvc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="334" id="fS3-Ce-D1y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="lightSwitch" destination="ipv-z3-gra" id="Fh6-7U-YNr"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="86.956521739130437" y="24.456521739130437"/>
         </scene>
     </scenes>
 </document>
