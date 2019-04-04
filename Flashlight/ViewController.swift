@@ -21,13 +21,16 @@ class ViewController: UIViewController {
         
     }
     
-    @objc func switchLight() {
+    @IBAction func switchLight(_ sender: Any) {
+        
         if self.view.backgroundColor == UIColor.black {
             self.view.backgroundColor = UIColor.white
         } else {
             self.view.backgroundColor = UIColor.black
         }
+    
     }
+    
 
 
 }
